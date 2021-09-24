@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "name": "Charizard",
+      "type": "fire",
+      "health": 100,
+      "attack": 20,
+      "defense": 10,
+      "image": ".assets/PokemonImages/Charizard.png"
+    },
+    {
+        "id": 2,
+        "name": "Squirtle",
+        "type": "water",
+        "health": 100,
+        "attack": 25,
+        "defense": 5
+    },
+    {
+    "id": 3,
+    "name": "Bulbasaur",
+    "type": "earth",
+    "health": 100,
+    "attack": 15,
+    "defense": 10
+    }
+
+]
+
