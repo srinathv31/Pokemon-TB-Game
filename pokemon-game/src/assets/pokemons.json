@@ -6,7 +6,7 @@
       "health": 100,
       "attack": 20,
       "defense": 10,
-      "image": ".assets/PokemonImages/Charizard.png"
+      "image": "./assets/PokemonImages/Charizard.png"
     },
     {
         "id": 2,
@@ -14,7 +14,8 @@
         "type": "water",
         "health": 100,
         "attack": 25,
-        "defense": 5
+        "defense": 5,
+        "image": "./assets/PokemonImages/Squirtle.png"
     },
     {
     "id": 3,
@@ -22,7 +23,8 @@
     "type": "earth",
     "health": 100,
     "attack": 15,
-    "defense": 10
+    "defense": 10,
+    "image": "./assets/PokemonImages/Bulbasaur.png"
     }
 
 ]

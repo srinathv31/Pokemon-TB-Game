@@ -5,4 +5,5 @@ export interface Pokemon {
     health: number
     attack: number
     defense: number
+    image: string
 }

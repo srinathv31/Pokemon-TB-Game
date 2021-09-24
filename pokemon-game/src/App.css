@@ -49,6 +49,7 @@
 .cell-footer {
   background: blueviolet;
   grid-area: footer;
+  padding: 1%;
 }
 .cell {
   color: white;
