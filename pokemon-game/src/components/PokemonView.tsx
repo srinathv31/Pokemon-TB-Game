@@ -1,7 +1,7 @@
 import { Pokemon } from "../interfaces/pokemon";
 
 export function CardViewer({ pokemon }:
-    { pokemon: Pokemon}): JSX.Element {
+    { pokemon: Pokemon }): JSX.Element {
     return <div>
         <div>{pokemon.name} {pokemon.type}</div>
         <div><img src={pokemon.image} alt="pokemon" width="250"/></div>

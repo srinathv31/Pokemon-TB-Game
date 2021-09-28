@@ -1,7 +1,5 @@
 import { Pokemon } from "../interfaces/pokemon";
-import DECK from '../assets/pokemons.json';
 import { getRandomPokemon } from "../utilities/data";
-import { useState } from "react";
 
 export function Controls({ setPokemon, oppSetPokemon, deck }:
     {
