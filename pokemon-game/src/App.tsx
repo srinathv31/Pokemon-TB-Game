@@ -12,6 +12,9 @@ function App(): JSX.Element {
   const [activeCard, setActiveCard] = useState<Pokemon>(DECK[0] as Pokemon);
   const [oppActiveCard, oppSetActiveCard] = useState<Pokemon>(DECK[0] as Pokemon);
   const [playerHealth, setPlayerHealth] = useState<number>(DECK[0].health as number);
+  const [oppHealth, setOppHealth] = useState<number>(DECK[0].health as number);
+  const [visible, setVisible] = useState<boolean>(false);
+  const [gameState, setGameState] = useState<boolean>(false);
 
   return (
     <div className="App">
@@ -23,21 +26,31 @@ function App(): JSX.Element {
         <Controls 
         setPokemon= {setActiveCard}
         oppSetPokemon = {oppSetActiveCard}
-        deck = {DECK}></Controls>
-        <CardViewer pokemon={activeCard}></CardViewer>
+        healthSetter = {setPlayerHealth}
+        oppHealthSetter = {setOppHealth}
+        deck = {DECK} 
+        pokemon = {activeCard}></Controls>
+        
+        <CardViewer pokemon={activeCard}
+        pokemonHealth = {playerHealth}></CardViewer>
       </aside>
       <main className="cell cell-main">
         <BattleControls
         pokemon1={activeCard}
-        pokemon2={oppActiveCard}></BattleControls>
+        pokemon2={oppActiveCard}
+        pokemon2Health={setOppHealth}></BattleControls>
       </main>
+      {/* CPU Hand */}
       <aside className="cell cell-right">
-        <CardViewer pokemon={oppActiveCard}></CardViewer>
+        <CardViewer 
+        pokemon={oppActiveCard}
+        pokemonHealth = {oppHealth}></CardViewer>
       </aside>
       <footer className="class cell-footer">
         <BattleLogger 
         pokemon1={activeCard}
-        pokemon2={oppActiveCard}></BattleLogger>
+        pokemon2={oppActiveCard}
+        pokemon2Health={oppHealth}></BattleLogger>
       </footer>
     </div>
   );

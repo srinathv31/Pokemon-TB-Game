@@ -3,8 +3,12 @@ import DECK from '../assets/pokemons.json';
 import { useEffect, useState } from "react";
 import { CardViewer } from "./PokemonView";
 
-export function BattleControls({ pokemon1, pokemon2 }:
-    { pokemon1: Pokemon, pokemon2: Pokemon}): JSX.Element {
+export function BattleControls({ pokemon1, pokemon2, pokemon2Health }:
+    { pokemon1: Pokemon, pokemon2: Pokemon,
+      pokemon2Health: (h: number) => void }): JSX.Element {
+
+        function startGame(){
+        }
 
         function playerAttack() {
             if (pokemon2.health > pokemon1.attack){
@@ -13,12 +17,12 @@ export function BattleControls({ pokemon1, pokemon2 }:
             else {
                 pokemon2.health = 0;
             }
-            console.log(pokemon2.health);
-            console.log("attack");
-            return pokemon2.health;
+            pokemon2Health(pokemon2.health);
+            return pokemon2Health;
         }
 
-        return <div>
+    return <div>
+        <button onClick={startGame}>Start Game</button>
         <button onClick={playerAttack}>Attack</button>
     </div>
 }
