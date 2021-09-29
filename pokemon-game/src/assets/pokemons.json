@@ -6,7 +6,7 @@
       "health": 100,
       "attack": 20,
       "defense": 10,
-      "image": "./assets/PokemonImages/Charizard.png"
+      "image": "/Pokemon-TB-Game/static/media/Charizard.3a975ddb.png"
     },
     {
         "id": 2,
