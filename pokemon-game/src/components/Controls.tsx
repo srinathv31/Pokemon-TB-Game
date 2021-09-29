@@ -5,7 +5,7 @@ export function Controls({ setPokemon, oppSetPokemon, healthSetter, oppHealthSet
     {
         setPokemon: (c: Pokemon) => void, oppSetPokemon: (c: Pokemon) => void,
         healthSetter: (h: number) => void, oppHealthSetter: (h: number) => void, 
-        gameStateSetter: (g: number) => void, deck: Pokemon[], pokemon: Pokemon
+        gameStateSetter: (g: number) => void, deck: Pokemon[], pokemon: Pokemon,
     }): JSX.Element {
 
     function setRandomPokemon() {
@@ -13,7 +13,7 @@ export function Controls({ setPokemon, oppSetPokemon, healthSetter, oppHealthSet
         oppSetPokemon(getRandomPokemon(deck));
         healthSetter(pokemon.health);
         oppHealthSetter(pokemon.health);
-        gameStateSetter(1);
+        gameStateSetter(2);
     }
 
     return <div>

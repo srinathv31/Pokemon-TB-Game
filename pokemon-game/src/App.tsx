@@ -7,7 +7,6 @@ import { CardViewer } from './components/PokemonView';
 import { Controls } from './components/Controls';
 import { BattleLogger } from './components/BattleLog';
 import { BattleControls } from './components/BattleControls';
-import { render } from '@testing-library/react';
 
 function App(this: any): JSX.Element {
   const [activeCard, setActiveCard] = useState<Pokemon>(DECK[0] as Pokemon);
@@ -16,13 +15,7 @@ function App(this: any): JSX.Element {
   const [oppHealth, setOppHealth] = useState<number>(DECK[0].health as number);
   const [visible, setVisible] = useState<boolean>(false);
   const [gameState, setGameState] = useState<number>(0);
-  const [startGame, setStartGame] = useState({ visible: false, intro: false });
-  const onClickStartGame = () => {
-    setStartGame({
-      visible: true,
-      intro: true,
-    });
-  }
+  const [criticalState, setCriticalState] = useState<number>(0);
 
   return (
     <div className="App">
@@ -45,18 +38,14 @@ function App(this: any): JSX.Element {
       </aside>
 
       <main className="cell cell-main">
-      { !visible && <button onClick={onClickStartGame}>Start Game</button>}
+        { !visible && <button onClick={() => setVisible(!visible) }>Start Game</button>}
         { visible && <BattleControls
         pokemon1={activeCard}
         pokemon2={oppActiveCard}
+        pokemon1Health={setPlayerHealth}
         pokemon2Health={setOppHealth}
-        gameSetter = {setGameState}></BattleControls> }
-        {/* { !visible && <button onClick={() => setVisible(!visible) }>Start Game</button>}
-        { visible && <BattleControls
-        pokemon1={activeCard}
-        pokemon2={oppActiveCard}
-        pokemon2Health={setOppHealth}
-        gameSetter = {setGameState}></BattleControls> } */}
+        gameSetter = {setGameState}
+        criticalSetter={setCriticalState}></BattleControls> }
       </main>
 
       {/* CPU Hand */}
@@ -70,7 +59,8 @@ function App(this: any): JSX.Element {
         pokemon1={activeCard}
         pokemon2={oppActiveCard}
         pokemon2Health={oppHealth}
-        gameState = {gameState}></BattleLogger>
+        gameState = {gameState}
+        criticalChance = {criticalState}></BattleLogger>
       </footer>
     </div>
   );
