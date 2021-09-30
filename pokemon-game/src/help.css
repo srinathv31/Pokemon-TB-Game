@@ -42,9 +42,6 @@ p {
 .underline-change-logs{
     color: #5ec9e7;
     text-align: center;
-    transition: 0.5s cubic-bezier(.55, 0, .1, .1);
-    animation: fadeInDown;
-    animation-duration: 2s;
     position: relative;
 }
 .underline-change-logs::before {
@@ -87,6 +84,7 @@ transform: scaleX(.1);
 
 .list ul li {
     color: #EEEEEE;
+    text-align: left;
 }
 
 .list-link {
