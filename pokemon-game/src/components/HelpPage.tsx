@@ -1,6 +1,7 @@
 import '../help.css';
 
-export function HelpView({ }:
+// eslint-disable-next-line
+export function HelpView({}:
     { }): JSX.Element {
     
     return <div>

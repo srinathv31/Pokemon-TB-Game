@@ -2,29 +2,29 @@
     {
       "id": 1,
       "name": "Charizard",
-      "type": "fire",
+      "type": "Fire",
       "health": 100,
       "attack": 20,
       "defense": 10,
-      "image": "/Pokemon-TB-Game/static/media/Charizard.3a975ddb.png"
+      "image": "/Users/srinath/Desktop/Pokemon-TB-Game/pokemon-game/build/static/media/Charizard.3a975ddb.png"
     },
     {
         "id": 2,
         "name": "Squirtle",
-        "type": "water",
+        "type": "Water",
         "health": 100,
         "attack": 25,
         "defense": 5,
-        "image": "./assets/PokemonImages/Squirtle.png"
+        "image": "/Users/srinath/Desktop/Pokemon-TB-Game/pokemon-game/src/assets/PokemonImages/Squirtle.png"
     },
     {
     "id": 3,
     "name": "Bulbasaur",
-    "type": "earth",
+    "type": "Earth",
     "health": 100,
     "attack": 15,
     "defense": 10,
-    "image": "./assets/PokemonImages/Bulbasaur.png"
+    "image": "/Users/srinath/Desktop/Pokemon-TB-Game/pokemon-game/src/assets/PokemonImages/Bulbasaur.png"
     }
 
 ]

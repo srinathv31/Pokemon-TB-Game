@@ -29,7 +29,12 @@ function App(this: any): JSX.Element {
       </header>
       {/* Player Hand */}
       <aside className="cell cell-left">
-        { !visible && <Controls 
+        <CardViewer pokemon={activeCard}
+        pokemonHealth = {playerHealth}></CardViewer>
+      </aside>
+
+      <main className="cell cell-main">
+      { !visible && <Controls 
         setPokemon= {setActiveCard}
         oppSetPokemon = {oppSetActiveCard}
         healthSetter = {setPlayerHealth}
@@ -37,13 +42,8 @@ function App(this: any): JSX.Element {
         deck = {DECK} 
         pokemon = {activeCard}
         gameStateSetter = {setGameState}></Controls>}
-
-        <CardViewer pokemon={activeCard}
-        pokemonHealth = {playerHealth}></CardViewer>
-      </aside>
-
-      <main className="cell cell-main">
         { !visible && <button onClick={() => setVisible(!visible) }>Start Game</button>}
+        { visible && <><div className="stroke">Battle Controls</div><br /></>}
         { visible && <BattleControls
         pokemon1={activeCard}
         pokemon2={oppActiveCard}

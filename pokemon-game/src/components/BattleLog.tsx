@@ -22,7 +22,8 @@ export function BattleLogger({ pokemon1, pokemon2, gameState, criticalChance}:
         }
         if (gameState === 4) {
             return(
-                <div>{pokemon2.name} attacked {pokemon1.name} for {pokemon2.attack} HP!</div>
+                <><div>{pokemon1.name} attacked {pokemon2.name} for {pokemon1.attack} HP!</div>
+                <div>{pokemon2.name} attacked {pokemon1.name} for {pokemon2.attack} HP!</div></>
             )
         }
         if (gameState === 5) {
@@ -65,7 +66,31 @@ export function BattleLogger({ pokemon1, pokemon2, gameState, criticalChance}:
                 <div>{pokemon2.name} lost {(pokemon1.attack + 10)} HP!</div></>
             )
         }
-    
+        if (gameState === 12) {
+            return(
+                <div className="loading">CPU's {pokemon2.name} is defending</div>
+            )
+        }
+        if (gameState === 13) {
+            return(
+                <><div className="loading">{pokemon2.name} with a {criticalChance}% to dodge and counter attack</div><br />
+                <div>{pokemon2.name} dodged {pokemon1.name}'s attack!</div></>
+            )
+        }
+        if (gameState === 14) {
+            return(
+                <><div>CPU's {pokemon2.name} with a {criticalChance}% to counter attack.</div><br />
+                <div>{pokemon2.name} counter-attacked with critical hit of {(pokemon2.attack + 10)} damage!</div>
+                <div>{pokemon1.name} lost {(pokemon2.attack + 10)} HP!</div></>
+            )
+        }
+        if (gameState === 15) {
+            return(
+                <><div>{pokemon2.name} with a {criticalChance}% to dodge and counter attack.</div><br />
+                <div>{pokemon2.name} could not dogde attack!</div>
+                <div>{pokemon1.name} attacked {pokemon2.name} for {(pokemon1.attack - pokemon2.defense)} HP!</div></>
+            )
+        }
     return <div>
         {/* <div>{pokemon2.name} Health: {pokemon2Health}</div> */}
     </div>
