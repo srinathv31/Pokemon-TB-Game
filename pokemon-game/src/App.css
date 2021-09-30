@@ -37,22 +37,21 @@
 .cell-left {
   border-radius: 25px;
   background: orangered;
-  background-image: url(./assets/PokemonImages/PokemonCardTemplate.png);
-  background-size: contain;
+  /* background-image: url(./assets/PokemonImages/PokemonCardTemplate.png); */
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   border: 2px solid rgb(19, 255, 255);
   transition: 100ms;
-  margin: 5%;
-  margin-left: 0%;
+  /* margin: 5%;
+  margin-left: 0%; */
   grid-area: left;
 }
 .cell-left:hover {
   border: 3px solid rgb(19, 255, 255);
 }
 .cell-left img {
-  padding: 1%;
-  margin: 0%;
+  padding: 5%;
 }
 .cell-main button {
   display: inline-block;
@@ -101,22 +100,21 @@
 }
 .cell-right {
   background: rgb(235, 176, 28);
-  background-image: url(./assets/PokemonImages/PokemonCardTemplate.png);
-  background-size: contain;
+  /* background-image: url(./assets/PokemonImages/PokemonCardTemplate.png); */
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   border-radius: 25px;
   border: 2px solid rgb(255, 49, 34);
   transition: 100ms;
-  margin: 5%;
+  /* margin: 5%; */
   grid-area: right;
 }
 .cell-right:hover {
   border: 3px solid rgb(255, 49, 34);
 }
 .cell-right img {
-  padding: 1%;
-  margin: 0%;
+  padding: 5%;
 }
 .cell-footer {
   /* background: blueviolet; */

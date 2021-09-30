@@ -31,8 +31,12 @@ export function HelpView({}:
                         attribute minus your Pokemon's defense attribute. So the higher your defense attribute, the less damage
                         you will take on a missed dodge.
                     </li>
+                    <li>Again, since this is a turn-based game, the CPU can also choose to defend your attacks at certain turns.
+                        If the CPU is succesful, it will also counter-attack you.
+                    </li>
                     <li>Finally, a winner is declared when a Pokemon reaches 0 Health.</li>
                     <li>Note: some strategy could be to gamble with the "Defend" ability to give you a leg up in the fight.
+                        Or trying to time the "Defend" before the CPU can pull off a counter-attack on you!
                     </li>
                 </ul><br />
             </div>
