@@ -1,0 +1,148 @@
+@import url("https://use.typekit.net/rqb4qfr.css");
+
+body {
+    font-family: lato, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    margin-top:1%;
+    background: #282c34;
+    font-size: 12pt;
+}
+
+.change-logs {
+    font-family: lato, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    margin-top:5%;
+    background: #282c34;
+}
+
+h1 {
+    color: #5ec9e7;
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.h1-change-logs {
+    color: #5ec9e7;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    text-align: center;
+}
+
+p {
+    color: #5ec9e7;
+    text-align: center;
+    transition: 0.5s cubic-bezier(.55, 0, .1, .1);
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+.underline-change-logs{
+    color: #5ec9e7;
+    text-align: center;
+    transition: 0.5s cubic-bezier(.55, 0, .1, .1);
+    animation: fadeInDown;
+    animation-duration: 2s;
+    position: relative;
+}
+.underline-change-logs::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EEEEEE;
+    visibility: visible;
+    transform: scaleX(.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.underline {
+    color: #5ec9e7;
+    text-align: center;
+    transition: 0.5s cubic-bezier(.55, 0, .1, .1);
+    animation: fadeInDown;
+    animation-duration: 2s;
+    position: relative;
+}
+.underline:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EEEEEE;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.underline:hover:before {
+visibility: visible;
+transform: scaleX(.1);
+}
+
+.list ul li {
+    color: #EEEEEE;
+}
+
+.list-link {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.list-link li {
+    list-style: none;
+}
+
+.list-link li a {
+    color: #5ec9e7;
+    text-decoration: none;
+}
+
+.strike-done {
+    display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+.strike-done::after {
+    content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 1px;
+	box-shadow: 0 1px rgba(255,255,255,0.6);
+	margin-top: -0.7em;
+	background: #EEEEEE;
+	transform-origin: center left;
+	animation: strikethrough 1s 0.5s cubic-bezier(.55, 0, .1, 1) 1;
+	transition: transform 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+.strike-done:hover {
+	color: lightgreen;
+	background: rgba(255, 189, 182, 0.3);
+}
+.strike-done:hover:after {
+	transform: scaleX(0);
+	transform-origin: center right;
+}
+@keyframes strike-done {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+.strike-todo {
+    display: inline-block;
+	position: relative;
+	transition: all 0.5s cubic-bezier(.55, 0, .1, 1);
+}
+.strike-todo:hover {
+	color: orangered;
+	background: rgba(255, 189, 182, 0.3);
+}

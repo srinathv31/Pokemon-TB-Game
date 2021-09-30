@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from './assets/PokemonImages/logo.png';
+import { HelpView } from './components/HelpPage';
 import './App.css';
 import DECK from './assets/pokemons.json';
 import { Pokemon } from './interfaces/pokemon';
@@ -14,13 +15,17 @@ function App(this: any): JSX.Element {
   const [playerHealth, setPlayerHealth] = useState<number>(DECK[0].health as number);
   const [oppHealth, setOppHealth] = useState<number>(DECK[0].health as number);
   const [visible, setVisible] = useState<boolean>(false);
+  const [helpVisible, setHelpVisible] = useState<boolean>(false);
   const [gameState, setGameState] = useState<number>(0);
   const [criticalState, setCriticalState] = useState<number>(0);
 
   return (
     <div className="App">
       <header className="cell cell-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" /><br />
+        { !helpVisible && <button onClick={() => setHelpVisible(!helpVisible) }>How to Play</button>}
+        { helpVisible && <button onClick={() => setHelpVisible(!helpVisible) }>Close</button>}
+        { helpVisible && <HelpView></HelpView>}
       </header>
       {/* Player Hand */}
       <aside className="cell cell-left">
