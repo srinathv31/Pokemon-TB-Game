@@ -85,7 +85,7 @@ export function BattleControls({ pokemon1, pokemon2, pokemon1Health, pokemon2Hea
             const isMiss = checkMiss();
             if (isMiss) {
                 gameSetter(10);
-                setTimeout(criticalPlayerAttack, 2000);
+                setTimeout(criticalPlayerAttack, 3000);
             }
             else if (!isMiss){
                 if ((pokemon1.health + pokemon1.defense) > pokemon2.attack){
