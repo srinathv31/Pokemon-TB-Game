@@ -28,12 +28,16 @@ export function BattleLogger({ pokemon1, pokemon2, gameState, criticalChance}:
         }
         if (gameState === 5) {
             return(
-                <><div>{pokemon2.name} attacked {pokemon1.name} for {pokemon2.attack} HP!</div><div>CPU Wins!</div></>
+                <><div>{pokemon2.name} attacked {pokemon1.name} for {pokemon2.attack} HP!</div>
+                <div>CPU Wins!</div>
+                <br /><div>Refresh the page to play again!</div></>
             )
         }
         if (gameState === 6) {
             return(
-                <><div>{pokemon1.name} attacked {pokemon2.name} for {pokemon1.attack} HP!</div><div>Player Wins!</div></>
+                <><div>{pokemon1.name} attacked {pokemon2.name} for {pokemon1.attack} HP!</div>
+                <div>Player Wins!</div>
+                <br /><div>Refresh the page to play again!</div></>
             )
         }
         if (gameState === 7) {
