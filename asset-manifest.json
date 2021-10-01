@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Pokemon-TB-Game/static/css/main.c7a96a05.chunk.css",
-    "main.js": "/Pokemon-TB-Game/static/js/main.8f315712.chunk.js",
-    "main.js.map": "/Pokemon-TB-Game/static/js/main.8f315712.chunk.js.map",
+    "main.css": "/Pokemon-TB-Game/static/css/main.f484e7f2.chunk.css",
+    "main.js": "/Pokemon-TB-Game/static/js/main.f5cfe330.chunk.js",
+    "main.js.map": "/Pokemon-TB-Game/static/js/main.f5cfe330.chunk.js.map",
     "runtime-main.js": "/Pokemon-TB-Game/static/js/runtime-main.71ea631f.js",
     "runtime-main.js.map": "/Pokemon-TB-Game/static/js/runtime-main.71ea631f.js.map",
     "static/js/2.4bb6dbdf.chunk.js": "/Pokemon-TB-Game/static/js/2.4bb6dbdf.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.49c2057b.chunk.js": "/Pokemon-TB-Game/static/js/3.49c2057b.chunk.js",
     "static/js/3.49c2057b.chunk.js.map": "/Pokemon-TB-Game/static/js/3.49c2057b.chunk.js.map",
     "index.html": "/Pokemon-TB-Game/index.html",
-    "static/css/main.c7a96a05.chunk.css.map": "/Pokemon-TB-Game/static/css/main.c7a96a05.chunk.css.map",
+    "static/css/main.f484e7f2.chunk.css.map": "/Pokemon-TB-Game/static/css/main.f484e7f2.chunk.css.map",
     "static/js/2.4bb6dbdf.chunk.js.LICENSE.txt": "/Pokemon-TB-Game/static/js/2.4bb6dbdf.chunk.js.LICENSE.txt",
     "static/media/Bulbasaur.414b59bb.png": "/Pokemon-TB-Game/static/media/Bulbasaur.414b59bb.png",
     "static/media/Charizard.3a975ddb.png": "/Pokemon-TB-Game/static/media/Charizard.3a975ddb.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.71ea631f.js",
     "static/js/2.4bb6dbdf.chunk.js",
-    "static/css/main.c7a96a05.chunk.css",
-    "static/js/main.8f315712.chunk.js"
+    "static/css/main.f484e7f2.chunk.css",
+    "static/js/main.f5cfe330.chunk.js"
   ]
 }
