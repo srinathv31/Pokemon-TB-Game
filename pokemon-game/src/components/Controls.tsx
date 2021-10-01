@@ -8,6 +8,8 @@ export function Controls({ setPokemon, oppSetPokemon, healthSetter, oppHealthSet
         gameStateSetter: (g: number) => void, deck: Pokemon[], pokemon: Pokemon,
     }): JSX.Element {
 
+    // Setting pokemon by calling Random function
+    // Setting Health for pokemon as a useState to update Health throughout game
     function setRandomPokemon() {
         setPokemon(getRandomPokemon(deck));
         oppSetPokemon(getRandomPokemon(deck));

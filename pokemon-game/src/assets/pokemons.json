@@ -6,7 +6,7 @@
       "health": 100,
       "attack": 20,
       "defense": 10,
-      "image": "/Users/srinath/Desktop/Pokemon-TB-Game/pokemon-game/build/static/media/Charizard.3a975ddb.png"
+      "image": "./PokemonImages/Charizard.png"
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "health": 100,
         "attack": 25,
         "defense": 5,
-        "image": "/Users/srinath/Desktop/Pokemon-TB-Game/pokemon-game/src/assets/PokemonImages/Squirtle.png"
+        "image": "./PokemonImages/Squirtle.png"
     },
     {
     "id": 3,
@@ -24,7 +24,7 @@
     "health": 100,
     "attack": 15,
     "defense": 10,
-    "image": "/Users/srinath/Desktop/Pokemon-TB-Game/pokemon-game/src/assets/PokemonImages/Bulbasaur.png"
+    "image": "./PokemonImages/Bulbasaur.png"
     }
 
 ]

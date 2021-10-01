@@ -8,6 +8,7 @@ import Bulbasaur from "../assets/PokemonImages/Bulbasaur.png"
 export function CardViewer({ pokemon, pokemonHealth }:
     { pokemon: Pokemon, pokemonHealth: number }): JSX.Element {
     
+        // Returning the proper img path for the img src below
         function getPokemonImg() {
             let id = pokemon.name;
             switch(id) {

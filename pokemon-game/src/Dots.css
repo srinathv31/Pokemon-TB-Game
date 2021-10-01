@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+/* Used for dot dot dot animation */
 .loading:after {
     content: ' .';
     animation: dots 1s steps(5, end) infinite;
